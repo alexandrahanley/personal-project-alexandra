@@ -49,145 +49,40 @@
 
                             <div class="recent_news">
                                 <h4 class="widget_heading">Recent News</h4>
+                                <% @events.each do |event| %>
 
                                 <article class="post clearfix">
                                     <div class="entry-thumb">
+
                                         <a href="single_new.html">
                                             <img class="dark_shadow" src="http://placehold.it/500x500/83b81a/FFFFFF" alt="News3">
                                         </a>
                                     </div>
                                     <div class="entry-detail">
                                         <div class="entry-header">
-                                            <h2 class="entry-title"><a href="single_new.html">BBBS of Colorado is hosting en event</a></h2>
+                                            <h2 class="entry-title"><a href="single_new.html"><%= event.title %></a></h2>
                                             <div class="entry-meta">
-                                                <span class="posted-on">Mar 23, 2014</span>
+                                                <span class="posted-on"><%= event.date %></span>
                                                 <span class="comments-link">
                                                     <span class="sep">/</span>
-                                                    <a href="#">4 Comments</a>
+                                                    <a href="#"><%= event.start_time %></a>
                                                 </span>
                                             </div>
                                             <div class="entry-content">
-                                                <p>Cotton candy cupcake lemon drops. Cheesecake danish caramels tiramisu ice cream gingerbread macaroon. Candy bonbon candy jelly-o.
-                                                  Halvah cotton candy bonbon muffin tart tootsie roll chocolate cake pudding jujubes.</p>
+                                                <p><%= event.description %></p>
                                             </div>
                                             <div class="entry-more">
-                                                <a href="#" class="ui button">Read More</a>
+                                                <a href="#" class="ui button">See Details</a>
                                             </div>
                                         </div>
                                     </div>
                                 </article>
-
-                                <article class="post clearfix">
-                                    <div class="entry-thumb">
-                                        <a href="single_new.html">
-                                            <img class="dark_shadow" src="http://placehold.it/500x500/83b81a/FFFFFF" alt="News3">
-                                        </a>
-                                    </div>
-                                    <div class="entry-detail">
-                                        <div class="entry-header">
-                                            <h2 class="entry-title"><a href="single_new.html">City Park Event Sponsoredd by Someone</a></h2>
-                                            <div class="entry-meta">
-                                                <span class="posted-on">Mar 23, 2014</span>
-                                                <span class="comments-link">
-                                                    <span class="sep">/</span>
-                                                    <a href="#">4 Comments</a>
-                                                </span>
-                                            </div>
-                                            <div class="entry-content">
-                                                <p>Cotton candy cupcake lemon drops. Cheesecake danish caramels tiramisu ice cream gingerbread macaroon. Candy bonbon candy jelly-o.
-                                                  Halvah cotton candy bonbon muffin tart tootsie roll chocolate cake pudding jujubes.</p>
-                                            </div>
-                                            <div class="entry-more">
-                                                <a href="#" class="ui button">Read More</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article class="post clearfix">
-                                    <div class="entry-thumb">
-                                        <a href="single_new.html">
-                                            <img class="dark_shadow" src="http://placehold.it/500x500/83b81a/FFFFFF" alt="News3">
-                                        </a>
-                                    </div>
-                                    <div class="entry-detail">
-                                        <div class="entry-header">
-                                            <h2 class="entry-title"><a href="single_new.html">Another event for bigs and littles alike!</a></h2>
-                                            <div class="entry-meta">
-                                                <span class="posted-on">Mar 23, 2014</span>
-                                                <span class="comments-link">
-                                                    <span class="sep">/</span>
-                                                    <a href="#">4 Comments</a>
-                                                </span>
-                                            </div>
-                                            <div class="entry-content">
-                                                <p>Cotton candy cupcake lemon drops. Cheesecake danish caramels tiramisu ice cream gingerbread macaroon. Candy bonbon candy jelly-o.
-                                                  Halvah cotton candy bonbon muffin tart tootsie roll chocolate cake pudding jujubes.</p>
-                                            </div>
-                                            <div class="entry-more">
-                                                <a href="#" class="ui button">Read More</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article class="post clearfix">
-                                    <div class="entry-thumb">
-                                        <a href="single_new.html">
-                                            <img class="dark_shadow" src="http://placehold.it/500x500/83b81a/FFFFFF" alt="News3">
-                                        </a>
-                                    </div>
-                                    <div class="entry-detail">
-                                        <div class="entry-header">
-                                            <h2 class="entry-title"><a href="single_new.html">A different BBBS event for you!</a></h2>
-                                            <div class="entry-meta">
-                                                <span class="posted-on">Mar 23, 2014</span>
-                                                <span class="comments-link">
-                                                    <span class="sep">/</span>
-                                                    <a href="#">4 Comments</a>
-                                                </span>
-                                            </div>
-                                            <div class="entry-content">
-                                                <p>Cotton candy cupcake lemon drops. Cheesecake danish caramels tiramisu ice cream gingerbread macaroon. Candy bonbon candy jelly-o.
-                                                  Halvah cotton candy bonbon muffin tart tootsie roll chocolate cake pudding jujubes.</p>
-                                            </div>
-                                            <div class="entry-more">
-                                                <a href="#" class="ui button">Read More</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article class="post clearfix">
-                                    <div class="entry-thumb">
-                                        <a href="single_new.html">
-                                            <img class="dark_shadow" src="http://placehold.it/500x500/83b81a/FFFFFF" alt="News3">
-                                        </a>
-                                    </div>
-                                    <div class="entry-detail">
-                                        <div class="entry-header">
-                                            <h2 class="entry-title"><a href="single_new.html">Big Brother Big Sisters of Colorado Event</a></h2>
-                                            <div class="entry-meta">
-                                                <span class="posted-on">Mar 23, 2014</span>
-                                                <span class="comments-link">
-                                                    <span class="sep">/</span>
-                                                    <a href="#">4 Comments</a>
-                                                </span>
-                                            </div>
-                                            <div class="entry-content">
-                                                <p>Cotton candy cupcake lemon drops. Cheesecake danish caramels tiramisu ice cream gingerbread macaroon. Candy bonbon candy jelly-o.
-                                                  Halvah cotton candy bonbon muffin tart tootsie roll chocolate cake pudding jujubes.</p>
-                                            </div>
-                                            <div class="entry-more">
-                                                <a href="#" class="ui button">Read More</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
+                                <% end %>
 						</div>
 					</div>
 				</div>
+
 			</div>
+
     </div>
-		</div>
+  </div>
