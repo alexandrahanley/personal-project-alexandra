@@ -1,0 +1,107 @@
+
+    <%= form_for @event do |f| %>
+
+
+    <div class="form-row field_text">
+      <label>
+        <%= f.label :image_url %>
+      </label>
+      <div>
+        <%= f.url_field :image_url, class: "form-control"%>
+      </div>
+    </div>
+
+    <div class="form-row field_text">
+      <label class="col-md-4">
+        <%= f.label :title %>
+      </label>
+      <div class="col-md-12">
+        <%= f.text_field :title, class: "form-control"%>
+      </div>
+    </div>
+
+    <div class="form-row field_text">
+      <label class="col-md-4">
+        <%= f.label :description %>
+      </label>
+      <div class="col-md-12">
+        <%= f.text_field :description, class: "form-control"%>
+      </div>
+    </div>
+
+    <div class="form-row field_text">
+      <label class="col-md-4">
+        <%= f.label :date %>
+      </label>
+      <div class="col-md-12">
+        <%= f.date_field :date, class: "form-control"%>
+      </div>
+    </div>
+
+    <div class="form-row field_text">
+      <label class="col-md-4">
+        <%= f.label :start_time %>
+      </label>
+      <div class="col-md-12">
+        <%= f.time_field :start_time, class: "form-control"%>
+      </div>
+    </div>
+
+    <div class="form-row field_text">
+      <label class="col-md-4">
+        <%= f.label :end_time %>
+      </label>
+      <div class="col-md-12">
+        <%= f.time_field :end_time, class: "form-control"%>
+      </div>
+    </div>
+
+    <div class="form-row field_text">
+      <label class="col-md-4">
+        <%= f.label :address %>
+      </label>
+      <div class="col-md-12">
+        <%= f.text_field :address, class: "form-control"%>
+      </div>
+    </div>
+
+    <div class="form-row field_text">
+      <label class="col-md-4">
+        <%= f.label :city %>
+      </label>
+      <div class="col-md-12">
+        <%= f.text_field :city, class: "form-control"%>
+      </div>
+    </div>
+
+    <div class="form-row field_text">
+      <label class="col-md-4">
+        <%= f.label :state %>
+      </label>
+      <div class="col-md-12">
+        <%= f.text_field :state, class: "form-control"%>
+      </div>
+    </div>
+
+    <div class="form-row field_text">
+      <label class="col-md-4">
+        <%= f.label :zipcode %>
+      </label>
+      <div class="col-md-12">
+        <%= f.text_field :zipcode, class: "form-control"%>
+      </div>
+    </div><br>
+
+    <div class="form-row field_submit">
+      <div>
+        <div class="action text-submit">
+          <div><%= f.submit "Create Event", class: "ui button" %></div>
+          <div><%= link_to "Cancel", root_path, class: "ui button" %></div>
+        </div>
+      </div>
+    </div>
+
+    <% end %>
+    </form>
+  </div>
+</div>
