@@ -1,14 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
-  <title>PersonalProjectAlexandra</title>
+  <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+
+  <title>Katapult</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+
+  <link rel="shortcut icon" href="#" title="Favicon">
+
+  <link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic" rel="stylesheet" type="text/css">
+
+
 </head>
 <body>
 
-<%= yield %>
+	<div id="page" class="hfeed site">
+
+		<header id="masthead" class="ui page site-header" role="banner">
+
+            <div id="search-container" class="search-box-wrapper">
+                <div class="container">
+                    <i class="big search icon"></i>
+                    <div class="search-box">
+                        <form action="http://example.com/" class="search-form" role="search">
+                            <label>
+                                <span class="screen-reader-text">Search for:</span>
+                                <input type="search" name="s" value="" title="Press Enter to submit your search" placeholder="Search…" class="search-field">
+                            </label>
+                            <input type="submit" value="Search" class="search-submit">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="topbar">
+                <div class="container">
+
+
+                    <div class="topbar_right fright">
+                        <nav class="topbar_menu_left">
+                            <ul>
+                                <li><a href="#">Admin Login</a></li>
+                                <li><a href="#">BBBS of Colorado</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header">
+                <div class="container">
+                    <div class="logo_area fleft">
+                        <a href="index.html" rel="home">
+                          <%= image_tag("fake_logo.png") %>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+		</header>
+
+    <%= yield %>
+    <footer id="colophon" class="site-footer" role="contentinfo">
+  <div class="container">
+            <div class="inner">
+                <div class="four column stackable doubling ui grid">
+                    <div class="column">
+                        <aside class="widget">
+                            <h4 class="widget_heading">About Katapult</h4>
+                            <div class="widget_content">
+                                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamconisi</p>
+                                <a href="#" class="tiny ui twitter button"><i class="twitter icon"></i>Twitter</a>
+                                <a href="#" class="tiny ui facebook button"><i class="facebook icon"></i>FaceBook</a>
+                                <a href="#" class="tiny ui spotify button"><i class="spotify icon"></i>Spotify</a>
+                                <a href="#" class="tiny ui soundcloud button"><i class="soundcloud icon"></i>SoundCloud</a>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="column">
+                        <aside class="widget widget_nav_menu">
+                            <h4 class="widget_heading">More about BBBS of Colorado</h4>
+                            <div class="widget_content">
+                                <ul>
+                                    <li><a href="#">Our History</a></li>
+                                    <li><a href="#">Products</a></li>
+                                    <li><a href="#">Browse Events</a></li>
+                                    <li><a href="#">All Albums</a></li>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_copy">
+                <div class="two column stackable ui grid">
+                    <div class="column copy_left">
+                        <p><a href="https://github.com/alexandrahanley">Alexandra Hanley</a> Copyright © 2015.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</footer>
+
+</div>
+
 
 </body>
 </html>
+
+    </html>
