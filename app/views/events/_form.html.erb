@@ -1,8 +1,7 @@
 
-    <%= form_for @event do |f| %>
+    <%=  form_for(@event, :html => { :class => "form-stacked"} )  do |f| %>
 
-
-    <div class="form-row field_text">
+    <div class="form-row">
       <label>
         <%= f.label :image_url %>
       </label>
@@ -11,7 +10,7 @@
       </div>
     </div>
 
-    <div class="form-row field_text">
+    <div class="form-row">
       <label class="col-md-4">
         <%= f.label :title %>
       </label>
@@ -20,7 +19,7 @@
       </div>
     </div>
 
-    <div class="form-row field_text">
+    <div class="form-row">
       <label class="col-md-4">
         <%= f.label :description %>
       </label>
@@ -29,7 +28,7 @@
       </div>
     </div>
 
-    <div class="form-row field_text">
+    <div class="form-row">
       <label class="col-md-4">
         <%= f.label :date %>
       </label>
@@ -38,7 +37,7 @@
       </div>
     </div>
 
-    <div class="form-row field_text">
+    <div class="form-row">
       <label class="col-md-4">
         <%= f.label :start_time %>
       </label>
@@ -47,7 +46,7 @@
       </div>
     </div>
 
-    <div class="form-row field_text">
+    <div class="form-row">
       <label class="col-md-4">
         <%= f.label :end_time %>
       </label>
@@ -56,7 +55,7 @@
       </div>
     </div>
 
-    <div class="form-row field_text">
+    <div class="form-row">
       <label class="col-md-4">
         <%= f.label :address %>
       </label>
@@ -65,7 +64,7 @@
       </div>
     </div>
 
-    <div class="form-row field_text">
+    <div class="form-row">
       <label class="col-md-4">
         <%= f.label :city %>
       </label>
@@ -74,7 +73,7 @@
       </div>
     </div>
 
-    <div class="form-row field_text">
+    <div class="form-row">
       <label class="col-md-4">
         <%= f.label :state %>
       </label>
@@ -83,7 +82,7 @@
       </div>
     </div>
 
-    <div class="form-row field_text">
+    <div class="form-row">
       <label class="col-md-4">
         <%= f.label :zipcode %>
       </label>
@@ -92,16 +91,14 @@
       </div>
     </div><br>
 
-    <div class="form-row field_submit">
+    <div class="form-row">
       <div>
-        <div class="action text-submit">
-          <div><%= f.submit "Create Event", class: "ui button" %></div>
+        <div>
+          <div><%= f.submit class: "ui button" %></div>
           <div><%= link_to "Cancel", root_path, class: "ui button" %></div>
         </div>
       </div>
     </div>
 
-    <% end %>
-    </form>
-  </div>
-</div>
+
+<% end %>

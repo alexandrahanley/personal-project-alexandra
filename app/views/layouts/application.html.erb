@@ -47,6 +47,7 @@
                             <ul>
                                 <li><a href="#">Admin Login</a></li>
                                 <li><a href="#">BBBS of Colorado</a></li>
+                                <li><%= link_to 'Add an Event', new_event_path%></li>
                             </ul>
                         </nav>
                     </div>
@@ -57,7 +58,7 @@
                 <div class="container">
                     <div class="logo_area fleft">
                         <a href="index.html" rel="home">
-                          <%= image_tag("fake_logo.png") %>
+                          <%= link_to image_tag("fake_logo.png"), root_path %>
                         </a>
                     </div>
 
