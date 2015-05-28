@@ -1,0 +1,53 @@
+<div id="page" class="hfeed site">
+
+      <div id="boxed_content" class="boxed_content">
+          <div class="inner">
+
+
+
+		<div id="content" class="site-content">
+
+			<div class="page-inner">
+				<div class="container">
+
+					<div id="primary" class="content-area">
+
+                          <header class="page-header">
+                              <br>
+                              <h1 class="page-title"><%= @event.title %></h1>
+                          </header>
+
+                              <div class="event_single">
+
+                                  <div class="event_widget">
+
+                                      <div class="event_item has_map dark_shadow clearfix">
+                                          <div class="event_map">
+                                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.9514634977954!2d-122.08096280000004!3d37.414622099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb755a2bbfcef%3A0x7207e9609eaa06cd!2s1500+N+Shoreline+Blvd%2C+Mountain+View%2C+CA+94043!5e0!3m2!1sen!2s!4v1409742972066" width="600" height="250" frameborder="0" style="border:0"></iframe>
+                                          </div>
+                                          <div class="event_left">
+                                              <div class="event_date"><%= @event.date.strftime('%A, %B %d, %Y') %></div>
+                                              <div class="event_month"><%= "#{@event.start_time.strftime('%H:%M%p')} - #{@event.end_time.strftime('%H:%M%p')}"  %></div>
+                                          </div>
+                                          <div class="event_detail">
+                                            <div class="event_location"><i class="map marker icon"></i><%="#{@event.address}"%>
+                                              <p><%="#{@event.city}, #{@event.state} #{@event.zipcode}"%></p></div>
+                                          </div>
+                                      </div>
+                                      <article class="post">
+
+                                          <div class="entry-content">
+                                              <p><%= @event.description %></p>
+                                          </div>
+
+                                      </article>
+
+                                  </div>
+                              </div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+	</div>
+</div>

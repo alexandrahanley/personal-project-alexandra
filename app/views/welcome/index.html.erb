@@ -60,12 +60,12 @@
                                     </div>
                                     <div class="entry-detail">
                                         <div class="entry-header">
-                                            <h2 class="entry-title"><a href="single_new.html"><%= event.title %></a></h2>
+                                            <h2 class="entry-title"><a href="single_new.html"><%= link_to event.title, event_path(event) %></a></h2>
                                             <div class="entry-meta">
-                                                <span class="posted-on"><%= event.date %></span>
+                                                <span class="posted-on"><%= event.date.strftime('%A, %B %d, %Y') %></span>
                                                 <span class="comments-link">
                                                     <span class="sep">/</span>
-                                                    <a href="#"><%= event.start_time %></a>
+                                                    <a href="#"><%= event.start_time.strftime('%H:%M%p') %></a>
                                                 </span>
                                             </div>
                                             <div class="entry-content">
