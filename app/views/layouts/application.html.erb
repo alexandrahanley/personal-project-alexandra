@@ -45,7 +45,14 @@
                     <div class="topbar_right fright">
                         <nav class="topbar_menu_left">
                             <ul>
-                                <li><a href="#">Admin Login</a></li>
+
+                              <% if current_user %>
+                                 <li>Logged in as: <strong><%= current_user.email %></strong></li>
+                                 <li><%= link_to 'Sign Out', signout_path %></li>
+                                <% else %>
+                                <li><%= link_to "Sign Up As Admin", signup_path %></li>
+                                <% end %>
+
                                 <li><a href="#">BBBS of Colorado</a></li>
                                 <li><%= link_to 'Add an Event', new_event_path%></li>
                             </ul>
@@ -91,7 +98,9 @@
                                     <li><a href="#">Our History</a></li>
                                     <li><a href="#">Products</a></li>
                                     <li><a href="#">Browse Events</a></li>
-                                    <li><a href="#">All Albums</a></li>
+                                    <% if not current_user %>
+                                    <li><%= link_to "Employee SignIn", signin_path %></li>
+                                    <% end %>
                                 </ul>
                             </div>
                         </aside>

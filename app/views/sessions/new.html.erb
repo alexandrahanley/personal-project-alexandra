@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="inner">
+
+  <h1>Sign In With Your BBBS of Colorado Email!</h1>
+
+  <%= form_tag signin_path do |f| %>
+
+  <% if @sign_in_error %>
+    <div><%= @sign_in_error %></div>
+    <% end %>
+
+  <div class= "form-row">
+    <label class="col-md-8">
+      <%= label_tag :email %><br>
+    </label>
+    <div class="col-md-12">
+    <%= email_field_tag :email %>
+  </div>
+  </div>
+
+  <div class= "form-row">
+    <label class="col-md-8">
+    <%= label_tag :password %>
+  </label>
+  <div class="col-md-12">
+  </div>
+    <%= password_field_tag :password %>
+  </div>
+
+  <div class= "form-row">
+    <%= submit_tag "Sign in", class: "ui button" %>
+  </div>
+
+
+  <% end %>
+
+</div>
+</div>

@@ -54,8 +54,9 @@
                                 <article class="post clearfix">
                                     <div class="entry-thumb">
 
-                                        <a href="single_new.html">
-                                            <img class="dark_shadow" src="http://placehold.it/500x500/83b81a/FFFFFF" alt="News3">
+                                        <a href="single_new.html" class= "dark_shadow">
+                                            <!-- <img class="dark_shadow" src="http://placehold.it/500x500/83b81a/FFFFFF" alt="News3"> -->
+                                            <%= image_tag(event.image_url, size: "170x170")%>
                                         </a>
                                     </div>
                                     <div class="entry-detail">
@@ -73,7 +74,7 @@
                                             </div>
                                             <div class="entry-more">
                                                 <span class="ui button"><%= link_to 'See Details', event_path(event) %></span>
-                                            
+
                                                 <span class="ui button"><%= link_to 'Delete', event, class: "btn btn-danger", method: :delete %></span>
                                             </div>
                                         </div>
