@@ -23,7 +23,7 @@
 
                                       <div class="event_item has_map dark_shadow clearfix">
                                           <div class="event_map">
-                                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.9514634977954!2d-122.08096280000004!3d37.414622099999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb755a2bbfcef%3A0x7207e9609eaa06cd!2s1500+N+Shoreline+Blvd%2C+Mountain+View%2C+CA+94043!5e0!3m2!1sen!2s!4v1409742972066" width="600" height="250" frameborder="0" style="border:0"></iframe>
+                                              <iframe src="https://www.google.com/maps/embed/v1/place?q=<%= format_gmap_address(@event.address, @event.city, @event.state, @event.zipcode) %>/@<%="#{@event.latitude}%2C%20#{@event.longitude}"%>&key=AIzaSyCw2WGT9C4m4tYbB_UrTiQYsc92YotDjHU" width="600" height="250" frameborder="0" style="border:0"></iframe>
                                           </div>
                                           <div class="event_left">
                                               <div class="event_date"><%= @event.date.strftime('%A, %B %d, %Y') %></div>
@@ -44,6 +44,11 @@
 
                                   </div>
                               </div>
+
+                                <!-- Carousel outer containers -->
+                                <!-- Each do event -->
+                                <!-- Unless event is == current event id -->
+                                <!-- Render each slide with info or whatever -->
 					</div>
 				</div>
 			</div>

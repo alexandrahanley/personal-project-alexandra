@@ -3,8 +3,8 @@ Event.create(title: "ANOTHER EVENT FOR BIGS AND LITTLES ALIKE!", description: "C
             zipcode: 80546, image_url: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStWP21np5FY0Al1AnqfDNO3P6A6eQKDqlepdS0X5QhxqUMs-l_")
 
 Event.create(title: "What!? ANOTHER EVENT FOR BIGS AND LITTLES!", description: "Cotton candy cupcake lemon drops. Cheesecake danish caramels tiramisu ice cream gingerbread macaroon. Candy bonbon candy jelly-o. Halvah cotton candy bonbon muffin tart tootsie roll chocolate cake pudding jujubes.",
-            date: "1/2/2015", start_time: "02:00:00", end_time: "01:00:00", address: "4849 W. 30th Ave.", city: "Denver", state: "CO",
-            zipcode: 90234, image_url: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStWP21np5FY0Al1AnqfDNO3P6A6eQKDqlepdS0X5QhxqUMs-l_")
+            date: "1/2/2015", start_time: "02:00:00", end_time: "01:00:00", address: "1302 Garden Circle", city: "Longmont", state: "CO",
+            zipcode: 80501, image_url: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcStWP21np5FY0Al1AnqfDNO3P6A6eQKDqlepdS0X5QhxqUMs-l_")
 
 Event.create(title: "ANOTHER EVENT FOR BIGS AND LITTLES ALIKE!", description: "Cotton candy cupcake lemon drops. Cheesecake danish caramels tiramisu ice cream gingerbread macaroon. Candy bonbon candy jelly-o. Halvah cotton candy bonbon muffin tart tootsie roll chocolate cake pudding jujubes.",
             date: "1/2/2015", start_time: "01:00:00", end_time: "01:00:00", address: "4849 W. 30th Ave.", city: "Denver", state: "CO",
