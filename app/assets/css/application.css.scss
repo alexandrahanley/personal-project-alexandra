@@ -258,6 +258,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 h1 {
     font-size: 25px;
     line-height: 1.15;
+    color: white;
 }
 
 h2 {
@@ -271,6 +272,7 @@ h3 {
 h4 {
     font-size: 18px;
     font-weight: normal;
+    color: white;
 }
 
 h5 {
@@ -896,21 +898,25 @@ input, textarea, input[type="submit"]:focus {
     margin-bottom: 5px;
 }
 .recent_news article .entry-detail .entry-title a {
-    color: #FFF;
+    color: #dc3f28;
 }
 .recent_news article .entry-detail .entry-title a:hover {
-    color: #dc3f28;
+    color: #FFF;
 }
 .recent_news article .entry-meta {
     font-size: 11px;
     margin-bottom: 6.66667px;
     text-transform: uppercase;
+    color: rgba(0, 0, 0, .8);
 }
 .recent_news article .entry-meta .sep {
     margin: 0 10px;
 }
 .recent_news article .entry-meta a:hover {
     color: #FFF;
+}
+.entry-content p {
+    color: rgba(0, 0, 0, .8);
 }
 .recent_news article .entry-more {
     margin-top: 20px;
@@ -1175,7 +1181,7 @@ img.wp-smiley {
 
 .page-title {
     margin-bottom: 30px;
-    color: #FFF;
+    color: #dc3f28;
 }
 
 .events_page .event_widget .event_left .event_date {
@@ -1225,7 +1231,7 @@ img.wp-smiley {
     position: relative;
     margin-bottom: 30px;
     padding: 15px 20px 20px 20px;
-    background: #212121;
+    background: rgba(0, 0, 0, .8);
 }
 .event_single .event_item.has_map {
     padding: 20px;
@@ -1244,6 +1250,11 @@ img.wp-smiley {
     margin-left: 5px;
 }
 
+.event_date, .event_month, .event_location {
+  color: #FFF
+}
+
+
 .ui.button {
     font-family: "Oswald", Helvetica, Arial, sans-serif;
     font-size: 12px;
@@ -1252,13 +1263,17 @@ img.wp-smiley {
     padding: .7em 1.2em;
     letter-spacing: .7px;
     text-transform: uppercase !important;
-    color: #FFF;
+    color: white;
     border-radius: 0;
-    background: #7E7E7E;
+    background: #dc3f28;
+}
+
+.ui.button a{
+  color: white;
 }
 .ui.button:hover {
     color: #FFF;
-    background: #dc3f28;
+    background: #4090b3;
 }
 
 .ui.button:focus {
@@ -1280,17 +1295,25 @@ img.wp-smiley {
     letter-spacing: 1.2px;
 }
 
-.ui.soundcloud.button {
-    background: #F50;
+.ui.twitter.button {
+    background: #e69c23;
+}
+.ui.facebook.button {
+    background: #783648;
+}
+.ui.youtube.button {
+    background: #75c044;
 }
 
-.ui.spotify.button {
-    background: #81B71A;
+.ui.twitter.button:hover, .ui.facebook.button:hover, .ui.youtube.button:hover {
+    background: #4090b3;
 }
 
 
-
-
+.widget_heading {
+  color: #4090b3;
+  font-size: 13px;
+}
 
 form label {
     font-size: 11px;
@@ -1298,6 +1321,7 @@ form label {
     margin-right: 5px;
     margin-bottom: 4px;
     text-transform: uppercase;
+    color: white;
 }
 
 .form-row {
