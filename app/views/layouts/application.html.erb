@@ -50,9 +50,11 @@
                 <% else %>
                 <li><%= link_to "Employee SignIn", signin_path %></li>
                 <% end %>
-
-                <li><a href="#">BBBS of Colorado</a></li>
+                <% if current_user %>
                 <li><%= link_to 'Add an Event', new_event_path%></li>
+                <% else %>
+                <li><a href="#">BBBS of Colorado</a></li>
+                <% end %>
               </ul>
             </nav>
           </div>
@@ -81,7 +83,8 @@
               <aside class="widget">
                 <h4 class="widget_heading">About Katapult</h4>
                 <div class="widget_content">
-                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamconisi</p>
+                  <p>Katapult is launching ideas to unite Bigs and Littles! In addition to the monthly event emails you receive from your Program Specialist, check back often for our list of kid-friendly events in the Denver metro area. There are tons of ideas for Bigs and Littles alike. Check out one of many Big Brother
+                    Big Sisters-sponsored events or view our video feed for Do-It-Yourself tutorials!</p>
                   <a href="#" class="tiny ui twitter button"><i class="twitter icon"></i>Twitter</a>
                   <a href="#" class="tiny ui facebook button"><i class="facebook icon"></i>FaceBook</a>
                   <a href="#" class="tiny ui youtube button"><i class="youtube icon"></i>YouTube</a>
