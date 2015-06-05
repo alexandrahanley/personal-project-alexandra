@@ -1,89 +1,88 @@
 
-        <div id="boxed_content" class="boxed_content">
-            <div class="inner">
+<div id="boxed_content" class="boxed_content">
+  <div class="inner">
 
-            <nav id="primary-navigation" class="site-navigation primary-navigation clearfix" role="navigation">
-                <button class="menu-toggle">Navigation</button>
-                <a href="#content" class="screen-reader-text skip-link">Skip to content</a>
-                <div class="menu-all-pages-container">
-                    <ul class="nav-menu">
-                        <li class="current-menu-item"><a href="index.html">Home</a></li>
-                        <li class="menu-item-has-children"><a href="page_events.html">Events</a>
-                            <ul class="sub-menu">
-                                <li><a href="page_events.html">Events Page</a></li>
-                                <li><a href="single_event.html">Single Event</a></li>
-                            </ul>
-                        </li>
+    <nav id="primary-navigation" class="site-navigation primary-navigation clearfix" role="navigation">
+      <button class="menu-toggle">Navigation</button>
+      <a href="#content" class="screen-reader-text skip-link">Skip to content</a>
+      <div class="menu-all-pages-container">
+        <ul class="nav-menu">
+          <li class="current-menu-item"><a href="index.html">Home</a></li>
+          <li class="menu-item-has-children"><a href="page_events.html">Events</a>
+            <ul class="sub-menu">
+              <li><a href="page_events.html">Events Page</a></li>
+              <li><a href="single_event.html">Single Event</a></li>
+            </ul>
+          </li>
 
-                        <li class="menu-item-has-children"><a href="#">BBBS of Colorado</a>
-                            <ul class="sub-menu">
-                                <li><a href="http://www.biglittlecolorado.org/volunteer.html">Volunteer for BBBS </a></li>
-                                <li><a href="http://www.biglittlecolorado.org/contact.php">Contact BBBS</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+          <li class="menu-item-has-children"><a href="#">BBBS of Colorado</a>
+            <ul class="sub-menu">
+              <li><a href="http://www.biglittlecolorado.org/volunteer.html">Volunteer for BBBS </a></li>
+              <li><a href="http://www.biglittlecolorado.org/contact.php">Contact BBBS</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="content" class="site-content">
+
+      <div id="home-slider-1" class="royalSlider">
+        <div class="rsOverflow" style="width: 1038px; height: 500px;">
+
+
+
+          <%= image_tag("big-little-female.png") %>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-inner">
+      <div class="container">
+
+
+
+        <div id="primary" class="content-area">
+
+          <div class="recent_news">
+            <br>
+            <h3 class="widget_heading">BBBS of CO Events</h3>
+            <% @events.each do |event| %>
+
+            <article class="post clearfix">
+              <div class="entry-thumb">
+
+                <a href="single_new.html" class= "dark_shadow">
+                  <%= image_tag(event.image_url, size: "170x170")%>
+                </a>
+              </div>
+              <div class="entry-detail">
+                <div class="entry-header">
+                  <h2 class="entry-title"><a href="single_new.html"><%= link_to event.title, event_path(event) %></a></h2>
+                  <div class="entry-meta">
+                    <span class="posted-on"><%= event.date.strftime('%A, %B %d, %Y') %></span>
+                    <span class="comments-link">
+                      <span class="sep">/</span>
+                      <a href="#"><%= event.start_time.strftime('%H:%M%p') %></a>
+                    </span>
+                  </div>
+                  <div class="entry-content">
+                    <p><%= event.description %></p>
+                  </div>
+                  <div class="entry-more">
+                    <span class="ui button"><%= link_to 'See Details', event_path(event) %></span>
+
+                    <span class="ui button"><%= link_to 'Delete', event, class: "btn btn-danger", method: :delete %></span>
+                  </div>
                 </div>
-            </nav>
-
-			<div id="content" class="site-content">
-
-				<div id="home-slider-1" class="royalSlider">
-          <div class="rsOverflow" style="width: 1038px; height: 500px;">
-
-
-
-            <%= image_tag("big-little-female.png") %>
+              </div>
+            </article>
+            <% end %>
           </div>
         </div>
       </div>
 
-				<div class="page-inner">
-					<div class="container">
-
-
-
-						<div id="primary" class="content-area">
-
-                            <div class="recent_news">
-                              <br>
-                                <h3 class="widget_heading">BBBS of CO Events</h3>
-                                <% @events.each do |event| %>
-
-                                <article class="post clearfix">
-                                    <div class="entry-thumb">
-
-                                        <a href="single_new.html" class= "dark_shadow">
-                                            <!-- <img class="dark_shadow" src="http://placehold.it/500x500/83b81a/FFFFFF" alt="News3"> -->
-                                            <%= image_tag(event.image_url, size: "170x170")%>
-                                        </a>
-                                    </div>
-                                    <div class="entry-detail">
-                                        <div class="entry-header">
-                                            <h2 class="entry-title"><a href="single_new.html"><%= link_to event.title, event_path(event) %></a></h2>
-                                            <div class="entry-meta">
-                                                <span class="posted-on"><%= event.date.strftime('%A, %B %d, %Y') %></span>
-                                                <span class="comments-link">
-                                                    <span class="sep">/</span>
-                                                    <a href="#"><%= event.start_time.strftime('%H:%M%p') %></a>
-                                                </span>
-                                            </div>
-                                            <div class="entry-content">
-                                                <p><%= event.description %></p>
-                                            </div>
-                                            <div class="entry-more">
-                                                <span class="ui button"><%= link_to 'See Details', event_path(event) %></span>
-
-                                                <span class="ui button"><%= link_to 'Delete', event, class: "btn btn-danger", method: :delete %></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </article>
-                                <% end %>
-						</div>
-					</div>
-				</div>
-
-			</div>
-
     </div>
+
   </div>
+</div>
