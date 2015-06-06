@@ -528,7 +528,7 @@ input, textarea, input[type="submit"]:focus {
     display: inline-block;
     padding: 10px 12px;
     text-transform: uppercase;
-    color: #7E7E7E;
+    color: #fff;
 }
 .topbar ul li a:hover {
     color: white;
@@ -693,14 +693,14 @@ input, textarea, input[type="submit"]:focus {
         content: "";
         border-width: 4px;
         border-style: solid;
-        border-color: #7E7E7E transparent transparent;
+        border-color: #fff transparent transparent;
     }
     .site-navigation .menu li.menu-item-has-children > a, .site-navigation .nav-menu li.menu-item-has-children > a {
         padding-right: 30px;
     }
     .site-navigation .menu li li.menu-item-has-children > a:after, .site-navigation .nav-menu li li.menu-item-has-children > a:after {
         top: 45%;
-        border-color: transparent transparent transparent #7E7E7E;
+        border-color: transparent transparent transparent #fff;
     }
     .site-navigation .menu li.menu-item-has-children:hover a:after, .site-navigation .nav-menu li.menu-item-has-children:hover a:after {
         border-color: #FFF transparent transparent;

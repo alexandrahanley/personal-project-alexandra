@@ -581,30 +581,7 @@ input, textarea, input[type="submit"]:focus {
         background: #dc3f28;
     }
 }
-@media screen and (min-width: 790px) {
-    .site-navigation .menu li.menu-item-has-children > a:after, .site-navigation .nav-menu li.menu-item-has-children > a:after {
-        position: absolute;
-        top: 50%;
-        right: 15px;
-        width: 0;
-        height: 0;
-        margin-top: -1px;
-        content: "";
-        border-width: 4px;
-        border-style: solid;
-        border-color: #7E7E7E transparent transparent;
-    }
-    .site-navigation .menu li.menu-item-has-children > a, .site-navigation .nav-menu li.menu-item-has-children > a {
-        padding-right: 30px;
-    }
-    .site-navigation .menu li li.menu-item-has-children > a:after, .site-navigation .nav-menu li li.menu-item-has-children > a:after {
-        top: 45%;
-        border-color: transparent transparent transparent #7E7E7E;
-    }
-    .site-navigation .menu li.menu-item-has-children:hover a:after, .site-navigation .nav-menu li.menu-item-has-children:hover a:after {
-        border-color: #FFF transparent transparent;
-    }
-}
+
 .site-navigation .menu .sub-menu, .site-navigation .nav-menu .sub-menu {
     margin: 0;
     padding: 0;
@@ -672,7 +649,6 @@ input, textarea, input[type="submit"]:focus {
         height: inherit;
     }
 }
-
 .header_social {
     position: absolute;
     top: 10px;
