@@ -8,18 +8,23 @@
   <title>Katapult</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
-  <link rel="shortcut icon" href="#" title="Favicon">
-
   <link href="https://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic" rel="stylesheet" type="text/css">
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+  <link rel="shortcut icon" href="#" title="Favicon">
 
 
 
@@ -52,7 +57,7 @@
               <ul>
 
                 <% if current_user %>
-                <li class="logged-in-as">Logged in as: <strong><%= current_user.email %></strong></li>
+                <li style="color: #8f1a1c">Logged in as: <strong><%= current_user.email %></strong></li>
                 <li><%= link_to 'Sign Out', signout_path %></li>
                 <% else %>
                 <li><%= link_to "Employee SignIn", signin_path %></li>
