@@ -16,3 +16,10 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function(){
+     $("#myCarousel").carousel({
+         interval :5000,
+         pause: false
+     });
+});
