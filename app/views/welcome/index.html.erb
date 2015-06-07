@@ -90,7 +90,7 @@
               <div class="entry-thumb">
 
                 <a href="single_new.html" class= "dark_shadow">
-                  <%= image_tag(event.image_url, size: "170x170")%>
+                  <%= image_tag(event.avatar, size: "170x170")%>
                 </a>
               </div>
               <div class="entry-detail">
@@ -109,7 +109,7 @@
                   <div class="entry-more">
                     <span class="ui button"><%= link_to 'See Details', event_path(event) %></span>
                     <% if current_user %>
-                    <span class="ui button"><%= link_to 'Delete', event, class: "btn btn-danger", method: :delete %></span>
+                    <span class="ui button"><%= link_to 'Delete', event, method: :delete %></span>
                     <% end %>
                   </div>
                 </div>
