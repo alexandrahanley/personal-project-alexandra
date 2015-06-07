@@ -1178,3 +1178,14 @@ form label {
 .bs-example{
 	margin: 20px;
 }
+
+.carousel-caption {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 50px;
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 5px 30px;
+  letter-spacing: 3px;
+  background: rgba(0, 0, 0, .7);
+}

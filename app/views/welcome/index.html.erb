@@ -31,51 +31,45 @@
         <div class="rsOverflow" style="width: 1038px; height: 500px;">
 
           <div class="bs-example">
-              <div id="myCarousel" class="carousel slide" data-interval="2000" data-ride="carousel">
+            <div id="myCarousel" class="carousel slide" data-interval="2000" data-ride="carousel">
 
 
-                  <ol class="carousel-indicators">
-                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                      <li data-target="#myCarousel" data-slide-to="1"></li>
-                      <li data-target="#myCarousel" data-slide-to="2"></li>
-                  </ol>
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
 
 
-                  <div class="carousel-inner">
-                      <div class="active item">
-                        <%= image_tag("big-little-female.png", class: 'layer') %>
-                          <div class="carousel-caption">
-                            <h3>First slide label</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                          </div>
-                      </div>
-                      <div class="item">
-                        <%= image_tag("big-little-male.jpg") %>
-                          <div class="carousel-caption">
-                            <h3>Second slide label</h3><br>
-                          </div>
-                      </div>
-                      <div class="item">
-                        <%= image_tag("big-little-female.png") %>
-                          <div class="carousel-caption">
-                            <h3>Third slide label</h3><br>
-                          </div>
-                      </div>
+              <div class="carousel-inner">
+                <div class="active item">
+                  <%= image_tag("big-little-female.png", class: 'layer') %>
+                  <div class="carousel-caption">
+                    <h1>First slide label</h1><br>
                   </div>
-
-                  <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-                      <span class="glyphicon glyphicon-chevron-left"></span>
-                  </a>
-                  <a class="carousel-control right" href="#myCarousel" data-slide="next">
-                      <span class="glyphicon glyphicon-chevron-right"></span>
-                  </a>
+                </div>
+                <div class="item">
+                  <%= image_tag("big-little-male.jpg") %>
+                  <div class="carousel-caption">
+                    <h1>Second slide label</h1><br>
+                  </div>
+                </div>
+                <div class="item">
+                  <%= image_tag("big-little-female.png") %>
+                  <div class="carousel-caption">
+                    <h1>Third slide label</h1><br>
+                  </div>
+                </div>
               </div>
+
+              <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            </div>
           </div>
-
-
-
-
-          <!-- <%= image_tag("big-little-female.png") %> -->
         </div>
       </div>
     </div>
@@ -116,7 +110,7 @@
                     <span class="ui button"><%= link_to 'See Details', event_path(event) %></span>
                     <% if current_user %>
                     <span class="ui button"><%= link_to 'Delete', event, class: "btn btn-danger", method: :delete %></span>
-                  <% end %>
+                    <% end %>
                   </div>
                 </div>
               </div>
