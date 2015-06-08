@@ -16,45 +16,43 @@
       <% end %>
 
       <div class="form-row">
-        <label class="col-md-6">
+        <label>
           <%= f.label :first_name %>
         </label>
-        <div class="col-md-6">
+        <div>
           <%= f.text_field :first_name, class: "form-control"%>
         </div>
-      </div><br>
+      </div>
 
       <div class="form-row">
-        <label class="col-md-6">
+        <label>
           <%= f.label :last_name %>
         </label>
-        <div class="col-md-6">
+        <div>
           <%= f.text_field :last_name, class: "form-control"%>
         </div>
-      </div><br>
+      </div>
 
       <div class="form-row">
-        <label class="col-md-6">
+        <label>
           <%= f.label :email %>
         </label>
-        <div class="col-md-6">
+        <div>
           <%= f.text_field :email, class: "form-control"%>
         </div>
-      </div><br>
+      </div>
 
       <div class="form-row">
-        <label class="col-md-6">
+        <label>
           <%= f.label :password %>
         </label>
-        <div class="col-md-6">
+        <div>
           <%= f.password_field :password, class: "form-control"%>
         </div>
       </div>
 
       <div class="form-row">
-          <div class="sign-up-button">
-            <div class="col-md-8"><%= f.submit "Sign Up", class: "ui button" %></div>
-          </div>
+            <div><%= f.submit "Sign Up", class: "ui facebook button" %></div>
       </div>
 
   <% end %>
