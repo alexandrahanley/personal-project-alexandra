@@ -12,14 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery.slick
-//= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
 
 $(document).ready(function(){
      $("#myCarousel").carousel({
-         interval :9000,
+         interval: 4000,
          pause: false
      });
 });

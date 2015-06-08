@@ -2,7 +2,9 @@
     <%=  form_for(@event, :html => { :class => "form-stacked"} )  do |f| %>
 
     <div class="form-row">
-        <%= f.label :event_image %>
+      <div>
+      <%= f.label :event_image %>
+    </div>
       <div>
         <%= f.file_field :avatar %>
       </div>
