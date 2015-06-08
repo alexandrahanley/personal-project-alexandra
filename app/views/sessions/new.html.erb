@@ -5,9 +5,11 @@
 
   <%= form_tag signin_path do |f| %>
 
-  <% if @sign_in_error %>
-    <div style="color: #8f1a1c"><%= @sign_in_error %></div>
-    <% end %>
+    <% if notice %>
+    <div style="color: #8f1a1c">
+      <strong><%= notice %></strong>
+    </div>
+  <% end %>
 
   <div class= "form-row">
     <label>

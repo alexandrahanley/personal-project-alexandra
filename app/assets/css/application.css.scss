@@ -780,9 +780,11 @@ input, textarea, input[type="submit"]:focus {
 }
 .recent_news article .entry-meta a:hover {
     color: #FFF;
+    font-style: bold;
 }
 .entry-content p {
     color: rgba(0, 0, 0, .8);
+    font-weight: bold;
 }
 .recent_news article .entry-more {
     margin-top: 20px;
@@ -1189,7 +1191,6 @@ form label {
 a:hover, a:link {
   text-decoration: none;
 }
-
 input#event_avatar{
   color: white;
 }
@@ -1199,10 +1200,13 @@ input#event_avatar{
   margin-top: -20px;
   margin-left: -20px;
 }
-
 a.carousel-control.left{
   margin-left: -20px;
 }
 a.carousel-control.right{
   margin-right: -20px;
+}
+
+input[type=field]{
+  button: red;
 }
