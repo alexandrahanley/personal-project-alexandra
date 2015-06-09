@@ -34,13 +34,7 @@
         <div class="container">
           <i class="big search icon"></i>
           <div class="search-box">
-            <form action="http://example.com/" class="search-form" role="search">
-              <label>
-                <span class="screen-reader-text">Search for:</span>
-                <input type="search" name="s" value="" title="Press Enter to submit your search" placeholder="Search…" class="search-field">
-              </label>
-              <input type="submit" value="Search" class="search-submit">
-            </form>
+
           </div>
         </div>
       </div>
@@ -60,7 +54,7 @@
                 <% if current_user %>
                 <li><%= link_to 'Add an Event', new_event_path%></li>
                 <% else %>
-                <li><a href="#">BBBS of Colorado</a></li>
+                <li><a href="http://www.biglittlecolorado.org" target="_blank">BBBS of Colorado</a></li>
                 <% end %>
               </ul>
             </nav>
@@ -95,9 +89,9 @@
                   <p>Katapult is launching ideas to unite Bigs and Littles! In addition to the monthly event emails you receive from your Program Specialist,
                     check back often for our list of kid-friendly events in the Denver metro area. There are tons of ideas for Bigs and Littles alike. Check out one of many Big Brothers
                     Big Sisters-sponsored events and fill up your calendar!</p>
-                  <a href="#" class="tiny ui twitter button"><i class="twitter icon"></i>Twitter</a>
-                  <a href="#" class="tiny ui facebook button"><i class="facebook icon"></i>FaceBook</a>
-                  <a href="#" class="tiny ui youtube button"><i class="youtube icon"></i>YouTube</a>
+                  <a href="https://twitter.com/biglittleco" target="_blank" class="tiny ui twitter button"><i class="twitter icon"></i>Twitter</a>
+                  <a href="https://www.facebook.com/BigBrothersBigSistersOfColorado?ref=ts" target="_blank" class="tiny ui facebook button"><i class="facebook icon"></i>FaceBook</a>
+                  <a href="https://www.youtube.com/user/BigLittleColorado" target="_blank" class="tiny ui youtube button"><i class="youtube icon"></i>YouTube</a>
                 </div>
               </aside>
             </div>
@@ -106,9 +100,9 @@
                 <h2 class="widget_heading">Find out more about BBBS of Colorado!</h2>
                 <div class="widget_content">
                   <ul>
-                    <li><a href="#">Our History</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Browse Events</a></li>
+                    <li><a href="http://www.biglittlecolorado.org" target="_blank">BBBS of Colorado</a></li>
+                    <li><a href="http://www.biglittlecolorado.org/staff_denver.html" target="_blank">Staff Directory</a></li>
+                    <li><a href="http://www.biglittlecolorado.org/careers.html" target="_blank">BBBS Careers</a></li>
                     <% if not current_user %>
                     <li><%= link_to "Sign Up As Admin", signup_path %></li>
                     <% end %>
@@ -122,7 +116,7 @@
         <div class="footer_copy">
           <div class="two column stackable ui grid">
             <div class="column copy_left">
-              <p><a href="https://github.com/alexandrahanley">Alexandra Hanley</a> Copyright © 2015.</p>
+              <p><a href="https://github.com/alexandrahanley" target="_blank">Alexandra Hanley</a> Copyright © 2015.</p>
             </div>
           </div>
         </div>
