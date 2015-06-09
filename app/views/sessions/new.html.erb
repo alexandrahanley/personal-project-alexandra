@@ -10,20 +10,20 @@
       <strong><%= notice %></strong>
     </div>
   <% end %>
-
+  
   <div class= "form-row">
-    <label>
+    <div>
       <%= label_tag :email %><br>
-    </label>
+    </div>
     <div>
     <%= email_field_tag :email %>
   </div>
   </div>
 
   <div class="form-row">
-    <label>
+    <div>
     <%= label_tag :password %>
-  </label>
+  </div>
   <div>
     <%= password_field_tag :password %>
   </div>
@@ -31,10 +31,8 @@
 
   <div class= "form-row">
     <div>
-
     <%= submit_tag "Sign in", class: "ui facebook button" %>
   </div>
-
   </div>
 
   <% end %>
