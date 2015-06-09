@@ -97,13 +97,13 @@
                 <div class="entry-header">
                   <h2 class="entry-title"><a href="single_new.html"><%= link_to event.title, event_path(event) %></a></h2>
                   <div class="entry-meta">
-                    <span class="posted-on"><%= event.date.strftime('%A, %B %d, %Y') %></span>
+                    <span class="posted-on"><strong><%= event.date.strftime('%A, %B %d, %Y') %></strong></span>
                     <span class="comments-link">
                       <span class="sep">/</span>
-                      <a href="#"><%= event.start_time.strftime('%H:%M%p') %></a>
+                      <a href="#"><strong><%= event.start_time.strftime('%H:%M%p') %></strong></a>
                     </span>
                   </div>
-                  <div class="entry-content">
+                  <div class="event_content">
                     <p><%= event.description %></p>
                   </div>
                   <div class="entry-more">
