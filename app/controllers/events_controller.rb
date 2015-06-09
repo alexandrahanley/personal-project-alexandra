@@ -17,7 +17,7 @@ class EventsController < ApplicationController
      if @event.save
        redirect_to root_path, notice: "Great job! You added an event!"
      else
-       render :new, notice: "Please fill out the !"
+       render :new
      end
    end
 
