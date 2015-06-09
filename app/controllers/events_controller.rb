@@ -15,16 +15,16 @@ class EventsController < ApplicationController
    def create
      @event = Event.new(event_params)
      if @event.save
-       redirect_to root_path
+       redirect_to root_path, notice: "Great job! You added an event!"
      else
-       render :new
+       render :new, notice: "Please fill out the !"
      end
    end
 
    def update
      @event = Event.find(params[:id])
      if @event.update(event_params)
-       redirect_to @event
+       redirect_to @event, notice: "You successfully updated this event"
      else
        render 'edit'
      end

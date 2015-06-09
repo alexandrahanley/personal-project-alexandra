@@ -1,6 +1,14 @@
 
     <%=  form_for(@event, :html => { :class => "form-stacked"} )  do |f| %>
 
+    <% if @event.errors.present? %>
+      <ul>
+        <% @event.errors.full_messages.each do |message| %>
+        <li style="color: #8f1a1c"><strong><%= message %></strong></li>
+        <% end %>
+      </ul>
+    <% end %>
+
     <div class="form-row">
       <div>
       <%= f.label :event_image %>
