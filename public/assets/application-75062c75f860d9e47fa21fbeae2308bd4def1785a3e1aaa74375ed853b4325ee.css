@@ -1,0 +1,1752 @@
+@charset "UTF-8";
+/* line 1, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border: 0;
+}
+
+/* line 8, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+body {
+  line-height: 1;
+}
+
+/* line 11, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 14, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 17, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+/* line 21, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+table {
+  border-spacing: 0;
+  border-collapse: separate;
+}
+
+/* line 25, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 29, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block;
+}
+
+/* line 32, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+a:focus {
+  outline: none;
+}
+
+/* line 35, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+a:active, a:hover {
+  outline: 0;
+}
+
+/* line 38, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+a img {
+  border: 0;
+}
+
+/* line 41, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+/* line 45, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 49, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+[hidden], template {
+  display: none;
+}
+
+/* line 52, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 55, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 58, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 61, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 64, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  height: 0;
+  vertical-align: baseline;
+}
+
+/* line 71, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+sup {
+  bottom: 1ex;
+}
+
+/* line 74, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+sub {
+  top: .5ex;
+}
+
+/* line 77, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+img {
+  -ms-interpolation-mode: bicubic;
+  border: 0;
+}
+
+/* line 81, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+pre {
+  overflow: auto;
+}
+
+/* line 84, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+button, input, optgroup, select, textarea {
+  font: inherit;
+  margin: 0;
+  color: inherit;
+}
+
+/* line 89, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+button {
+  overflow: visible;
+}
+
+/* line 92, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+button, select {
+  text-transform: none;
+}
+
+/* line 95, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+/* line 100, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+input[type="search"] {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-appearance: textfield;
+}
+
+/* line 107, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 110, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+/* line 113, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* line 117, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+button, input {
+  line-height: normal;
+  *overflow: visible;
+}
+
+/* line 122, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+input[type="checkbox"], input[type="radio"] {
+  padding: 0;
+}
+
+/* line 125, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 130, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+legend {
+  padding: 0;
+  border: 0;
+}
+
+/* line 134, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+textarea {
+  overflow: auto;
+}
+
+/* line 137, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+optgroup {
+  font-weight: bold;
+}
+
+/* line 140, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+/* line 144, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+td, th {
+  padding: 0;
+}
+
+/* line 147, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.clearfix:after, .container:after {
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  content: ".";
+}
+
+/* line 155, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.clearfix, .container {
+  display: inline-block;
+}
+
+/* line 159, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.clearfix, .container {
+  display: block;
+}
+
+/* line 163, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.clear, .gallery {
+  zoom: 1;
+}
+
+/* line 166, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.clear:before, .gallery:before, .clear:after, .gallery:after {
+  display: table;
+  content: "";
+}
+
+/* line 170, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.clear:after, .gallery:after {
+  clear: both;
+}
+
+/* line 173, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.break, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, blockquote, pre {
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+/* line 177, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.none {
+  display: none;
+}
+
+/* line 180, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+html, body {
+  font-size: 13.5px;
+}
+
+/* line 183, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+body, button, input, select, textarea {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  line-height: 1.8;
+  color: #AAA;
+}
+
+/* line 188, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+body {
+  background: #4cbdc5;
+}
+
+/* line 191, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+pre, code, input, textarea {
+  font: inherit;
+}
+
+/* line 194, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+a {
+  transition: opacity .25s ease 0s, background-color .25s ease 0s, color .25s ease 0s, background .25s ease 0s, box-shadow .25s ease 0s;
+  text-decoration: none;
+  color: #dc3f28;
+}
+
+/* line 199, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+a:hover {
+  color: #dc3f28;
+}
+
+/* line 202, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  clear: both;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
+
+/* line 209, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 213, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+h1 {
+  font-size: 25px;
+  line-height: 1.15;
+  color: white;
+}
+
+/* line 218, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+h2 {
+  font-size: 18px;
+}
+
+/* line 221, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+h3 {
+  font-size: 16px;
+}
+
+/* line 224, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+h4 {
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+}
+
+/* line 229, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+h5 {
+  font-size: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* line 234, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+h6 {
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* line 240, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+ul, ol, dl, p, details, address, .vcard, figure, pre, fieldset, table, dt, dd, hr {
+  margin-bottom: 20px;
+}
+
+/* line 243, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* line 248, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 251, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+blockquote {
+  clear: both;
+  margin: 20px 0;
+  margin: 2rem 0;
+}
+
+/* line 256, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+blockquote p {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+/* line 260, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+blockquote cite {
+  font-size: 13px;
+  font-style: normal;
+  margin-bottom: 20px;
+}
+
+/* line 265, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+dfn, cite, em, i {
+  font-style: italic;
+}
+
+/* line 268, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+figure {
+  margin: 0;
+}
+
+/* line 271, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+address {
+  margin: 20px 0;
+}
+
+/* line 274, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+hr {
+  height: 1px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #EEE;
+}
+
+/* line 280, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+tt, kbd, pre, code, samp, var {
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  padding: 5px 7px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #EEE;
+}
+
+/* line 288, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+pre {
+  line-height: 1.7;
+  overflow: auto;
+  max-width: 100%;
+  margin: 20px 0;
+  padding: 20px;
+  white-space: pre-wrap;
+}
+
+/* line 296, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+details summary {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* line 300, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+details :focus {
+  outline: none;
+}
+
+/* line 303, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+abbr, acronym, dfn {
+  font-size: .95em;
+  cursor: help;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-bottom: 1px dotted #EEE;
+}
+
+/* line 310, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+mark {
+  text-decoration: none;
+  background-color: #FFF9C0;
+}
+
+/* line 314, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+small {
+  font-size: 75%;
+}
+
+/* line 317, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+big {
+  font-size: 125%;
+}
+
+/* line 320, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+ul, ol {
+  padding-left: 20px;
+}
+
+/* line 323, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+ul {
+  list-style: disc;
+}
+
+/* line 326, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+ol {
+  list-style: decimal;
+}
+
+/* line 329, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+ul li, ol li {
+  margin: 8px 0;
+}
+
+/* line 332, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+dt {
+  font-weight: bold;
+}
+
+/* line 335, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+dd {
+  margin: 0 20px 20px;
+}
+
+/* line 338, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+iframe, embed {
+  max-width: 100%;
+}
+
+/* line 341, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-spacing: 0;
+  border-collapse: collapse;
+  border: 1px solid #EEE;
+}
+
+/* line 348, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+table > thead > tr > th, table > tbody > tr > th, table > tfoot > tr > th, table > thead > tr > td, table > tbody > tr > td, table > tfoot > tr > td {
+  line-height: 1.42857;
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #EEE;
+}
+
+/* line 355, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+table > thead > tr > th, table > thead > tr > td {
+  font-weight: bold;
+  border-bottom-width: 2px;
+}
+
+/* line 359, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+fieldset {
+  padding: 20px;
+  border: 1px solid #EEE;
+}
+
+/* line 363, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 366, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+select {
+  overflow: auto;
+  max-width: 100%;
+  padding: 10px;
+  vertical-align: top;
+  border: 1px solid #EEE;
+  outline: none;
+}
+
+/* line 374, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/* line 378, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+input[type="radio"], input[type="checkbox"] {
+  margin: 10px;
+}
+
+/* line 381, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+input, textarea, input[type="submit"]:focus {
+  outline: 0 none;
+}
+
+/* line 384, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.screen-reader-text {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* line 388, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.fleft {
+  float: left;
+}
+
+/* line 391, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.fright {
+  float: right;
+}
+
+/* line 394, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.container {
+  position: relative;
+  max-width: 1038px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* line 400, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.search-toggle .screen-reader-text {
+  left: 5px;
+}
+
+/* line 403, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.search-box-wrapper {
+  overflow: hidden;
+  height: 0;
+  color: #FFF;
+  background: #222;
+}
+
+/* line 409, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.topbar {
+  background: #dc3f28;
+  -webkit-box-shadow: 0 2px 2px -2px #111;
+  -moz-box-shadow: 0 2px 2px -2px #111;
+  box-shadow: 0 2px 2px -2px #111;
+}
+
+/* line 415, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.topbar .container {
+  max-width: 1098px;
+}
+
+/* line 418, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.topbar p {
+  font-size: 12px;
+  margin-bottom: 0;
+  padding: 10px 0;
+}
+
+/* line 423, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.topbar ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 427, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.topbar ul li {
+  display: inline-block;
+  margin: 0;
+  list-style: none;
+}
+
+/* line 432, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.topbar ul li a {
+  font-size: 10.5px;
+  font-weight: 600;
+  display: inline-block;
+  padding: 10px 12px;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* line 440, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.topbar ul li a:hover {
+  color: #8f1a1c;
+}
+
+/* line 443, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.topbar .topbar_right ul li:last-child a {
+  padding-right: 0;
+}
+
+/* line 447, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.topbar .topbar_right {
+  display: none;
+}
+
+@media screen and (min-width: 790px) {
+  /* line 451, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+  .topbar .topbar_right {
+    display: block;
+  }
+}
+/* line 455, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.header {
+  padding: 10px 0;
+}
+
+/* line 458, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.header .container {
+  max-width: 1098px;
+}
+
+/* line 461, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.header .logo_area.left {
+  float: none;
+  text-align: left;
+}
+
+/* line 465, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.header .header_right {
+  display: none;
+}
+
+@media screen and (min-width: 790px) {
+  /* line 469, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+  .header .logo_area.left {
+    float: left;
+  }
+
+  /* line 472, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+  .header .header_right {
+    display: block;
+  }
+}
+@media screen and (min-width: 790px) {
+  /* line 477, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+  .menu-toggle {
+    display: none;
+  }
+}
+/* line 481, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.menu-toggle {
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  width: 100%;
+  padding: 12px 20px 16px;
+  cursor: pointer;
+  text-align: left;
+  letter-spacing: .6px;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  background: #212121;
+}
+
+/* line 494, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.site-navigation.toggled-on .menu, .site-navigation.toggled-on .nav-menu {
+  display: block;
+}
+
+/* line 497, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.site-navigation {
+  position: relative;
+  z-index: 100;
+  -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (min-width: 790px) {
+  /* line 505, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+  .site-navigation {
+    background: #4090b3;
+  }
+}
+/* line 509, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.site-navigation .menu, .site-navigation .nav-menu {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 790px) {
+  /* line 515, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+  .site-navigation .menu, .site-navigation .nav-menu {
+    display: inline;
+  }
+}
+/* line 519, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.site-navigation .menu ul, .site-navigation .nav-menu ul {
+  margin-left: 0;
+}
+
+/* line 522, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.site-navigation .menu ul li a, .site-navigation .menu ul ul li a, .site-navigation .nav-menu ul li a, .site-navigation .nav-menu ul ul li a {
+  min-width: 100%;
+}
+
+@media screen and (min-width: 790px) {
+  /* line 526, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+  .site-navigation .menu ul li a, .site-navigation .menu ul ul li a, .site-navigation .nav-menu ul li a, .site-navigation .nav-menu ul ul li a {
+    min-width: 200px;
+    max-width: 250px;
+  }
+
+  /* line 530, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+  .site-navigation .menu ul li a:hover, .site-navigation .menu ul li a:focus, .site-navigation .menu ul ul li a:hover, .site-navigation .menu ul ul li a:focus, .site-navigation .nav-menu ul li a:hover, .site-navigation .nav-menu ul li a:focus, .site-navigation .nav-menu ul ul li a:hover, .site-navigation .nav-menu ul ul li a:focus {
+    color: white;
+    background: #dc3f28;
+  }
+}
+/* line 535, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.site-navigation .menu li, .site-navigation .nav-menu li {
+  margin: 0;
+  list-style: none;
+  text-align: left;
+}
+
+@media screen and (min-width: 790px) {
+  /* line 541, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+  .site-navigation .menu li, .site-navigation .nav-menu li {
+    position: relative;
+    display: inline-block;
+  }
+}
+/* line 546, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.site-navigation .menu li a, .site-navigation .nav-menu li a {
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.7;
+  display: block;
+  padding: 12.5px 20px;
+  transition: opacity .25s ease 0s, background-color .25s ease 0s, color .25s ease 0s, background .25s ease 0s, box-shadow .25s ease 0s;
+  letter-spacing: .6px;
+  text-transform: uppercase;
+  color: #FFF;
+  border-bottom: 1px solid #212121;
+}
+
+@media screen and (min-width: 790px) {
+  /* line 560, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+  .site-navigation .menu li a, .site-navigation .nav-menu li a {
+    padding: 13.33333px 25px;
+    border-bottom: none;
+    border-bottom: none;
+  }
+}
+/* line 566, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.site-navigation .menu li a:hover, .site-navigation .nav-menu li a:hover {
+  color: #dc3f28;
+}
+
+@media screen and (min-width: 790px) {
+  /* line 570, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+  .site-navigation .menu li a:hover, .site-navigation .nav-menu li a:hover {
+    color: #FFF;
+    background: #dc3f28;
+  }
+}
+/* line 575, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.site-navigation .menu li.current-menu-item a, .site-navigation .menu li.current_page_item a, .site-navigation .nav-menu li.current-menu-item a, .site-navigation .nav-menu li.current_page_item a {
+  color: #dc3f28;
+}
+
+@media screen and (min-width: 790px) {
+  /* line 579, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+  .site-navigation .menu li.current-menu-item a, .site-navigation .menu li.current_page_item a, .site-navigation .nav-menu li.current-menu-item a, .site-navigation .nav-menu li.current_page_item a {
+    color: white;
+    background: #dc3f28;
+  }
+}
+/* line 585, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.site-navigation .menu .sub-menu, .site-navigation .nav-menu .sub-menu {
+  margin: 0;
+  padding: 0;
+  -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* line 592, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.site-navigation .menu .sub-menu li a, .site-navigation .nav-menu .sub-menu li a {
+  padding-left: 20px;
+  border-bottom: 1px solid #212121;
+}
+
+/* line 596, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.site-navigation .menu .sub-menu li a:before, .site-navigation .nav-menu .sub-menu li a:before {
+  content: "↳ ";
+}
+
+@media screen and (min-width: 790px) {
+  /* line 600, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+  .site-navigation .menu .sub-menu li a, .site-navigation .nav-menu .sub-menu li a {
+    padding: 8.69565px 0;
+    padding-left: 10px;
+    color: black;
+    border-bottom: 1px solid #F5F5F5;
+    background: #FFF;
+  }
+}
+@media screen and (min-width: 790px) {
+  /* line 609, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+  .site-navigation .menu .sub-menu li:last-child a, .site-navigation .nav-menu .sub-menu li:last-child a {
+    border-bottom: none;
+  }
+}
+/* line 613, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.site-navigation .menu .sub-menu li li a, .site-navigation .nav-menu .sub-menu li li a {
+  padding-left: 60px;
+}
+
+@media screen and (min-width: 790px) {
+  /* line 617, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+  .site-navigation .menu .sub-menu li a, .site-navigation .nav-menu .sub-menu li a {
+    padding-left: 15px;
+  }
+
+  /* line 620, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+  .site-navigation .menu .sub-menu li a:before, .site-navigation .nav-menu .sub-menu li a:before {
+    content: "";
+  }
+
+  /* line 623, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+  .site-navigation .menu .sub-menu li li a, .site-navigation .nav-menu .sub-menu li li a {
+    padding-left: 30px;
+  }
+}
+@media screen and (min-width: 790px) {
+  /* line 628, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+  .site-navigation .menu .sub-menu, .site-navigation .nav-menu .sub-menu {
+    position: absolute;
+    z-index: 9999;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    background: #FFF;
+  }
+
+  /* line 635, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+  .site-navigation .menu .sub-menu ul, .site-navigation .nav-menu .sub-menu ul {
+    top: 0;
+    left: 100%;
+  }
+
+  /* line 639, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+  .site-navigation .menu .sub-menu a, .site-navigation .nav-menu .sub-menu a {
+    font-size: 12px;
+    padding-left: 15px;
+  }
+}
+@media screen and (min-width: 790px) {
+  /* line 645, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+  .site-navigation .menu li:hover > ul.sub-menu, .site-navigation .menu li:hover > ul, .site-navigation .menu li li:hover > ul, .site-navigation .nav-menu li:hover > ul.sub-menu, .site-navigation .nav-menu li:hover > ul, .site-navigation .nav-menu li li:hover > ul {
+    overflow: inherit;
+    clip: inherit;
+    width: inherit;
+    height: inherit;
+  }
+}
+/* line 652, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.header_social {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  margin: 0;
+  padding-top: 1px;
+}
+
+/* line 659, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.header_social li {
+  display: inline-block;
+  margin: 0;
+}
+
+/* line 663, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.header_social li a {
+  margin: 0;
+  color: #999;
+}
+
+/* line 667, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.header_social li a i.icon {
+  font-size: 17px;
+}
+
+/* line 670, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.header_social li a:hover {
+  color: #FFF;
+}
+
+/* line 674, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+#primary {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+/* line 679, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.boxed_content {
+  position: relative;
+  max-width: 1098px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* line 685, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.boxed_content .inner {
+  background: #f8d257;
+  -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* line 691, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.widget_heading, .widget-title {
+  font-size: 13px;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 15px;
+  letter-spacing: .6px;
+  text-transform: uppercase;
+  color: #7E7E7E;
+}
+
+/* line 700, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.overlay {
+  position: absolute;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity .1s ease-in 0s;
+  opacity: 0;
+  background: none repeat scroll 0 0 red;
+}
+
+/* line 711, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.overlay_title {
+  position: absolute;
+  z-index: 100;
+  top: 45%;
+  left: 0;
+  width: 100%;
+  transition: opacity .2s ease-in-out 0s;
+  text-align: center;
+  opacity: 0;
+}
+
+/* line 721, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.overlay_title h2 {
+  font-size: 15px;
+  color: #FFF;
+}
+
+/* line 725, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.recent_news article {
+  margin-bottom: 30px;
+}
+
+/* line 728, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.recent_news article .entry-thumb {
+  float: none;
+  width: 100%;
+  margin-right: 30px;
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 500px) {
+  /* line 735, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+  .recent_news article .entry-thumb {
+    float: left;
+    width: 222px;
+    margin-bottom: 0;
+  }
+}
+/* line 741, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.recent_news article .entry-thumb img {
+  max-width: 100%;
+  border: 7px solid rgba(0, 0, 0, 0.8);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+@media screen and (min-width: 500px) {
+  /* line 749, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+  .recent_news article .entry-thumb img {
+    max-width: 222px;
+  }
+}
+/* line 753, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.recent_news article .entry-thumb img:hover {
+  border-color: #222;
+}
+
+/* line 756, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.recent_news article .entry-detail {
+  overflow: hidden;
+}
+
+/* line 759, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.recent_news article .entry-detail .entry-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* line 763, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.recent_news article .entry-detail .entry-title a {
+  color: #dc3f28;
+}
+
+/* line 766, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.recent_news article .entry-detail .entry-title a:hover {
+  color: #FFF;
+}
+
+/* line 769, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.recent_news article .entry-meta {
+  font-size: 11px;
+  margin-bottom: 6.66667px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+/* line 775, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.recent_news article .entry-meta .sep {
+  margin: 0 10px;
+}
+
+/* line 778, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.recent_news article .entry-meta a:hover {
+  color: #FFF;
+  font-style: bold;
+}
+
+/* line 782, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.entry-content p {
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+}
+
+/* line 786, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.recent_news article .entry-more {
+  margin-top: 20px;
+}
+
+/* line 790, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.recent_news.bigthumb article .entry-thumb {
+  float: none;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+/* line 795, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.recent_news.bigthumb article .entry-thumb img {
+  max-width: 100%;
+  border: 7px solid #212121;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 802, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.recent_news.bigthumb article .entry-thumb img:hover {
+  border-color: #222;
+}
+
+/* line 806, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.single .entry-meta {
+  margin-bottom: 20px !important;
+  padding: 10px 0;
+  border-top: 1px solid #212121;
+  border-bottom: 1px solid #212121;
+}
+
+/* line 812, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.site-footer {
+  position: relative;
+  max-width: 1098px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* line 818, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.site-footer .container {
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* line 827, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.site-footer ul {
+  padding: 0;
+  list-style: none;
+}
+
+/* line 831, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.site-footer .widget_nav_menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 836, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.site-footer .widget_nav_menu ul li {
+  margin: 0;
+  border-bottom: 1px solid #212121;
+}
+
+/* line 840, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.site-footer .widget_nav_menu ul li:last-child {
+  border-bottom: none;
+}
+
+/* line 843, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.site-footer .widget_nav_menu ul li a {
+  display: block;
+  padding: 5px 0 9px;
+}
+
+/* line 847, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.site-footer .ui.grid > .column {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* line 851, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.site-footer .footer_copy {
+  padding-top: 25px;
+  border-top: 2px solid #212121;
+}
+
+/* line 855, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.site-footer .footer_copy .copy_left, .site-footer .footer_copy .copy_right {
+  text-align: center;
+}
+
+@media screen and (min-width: 790px) {
+  /* line 859, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+  .site-footer .footer_copy .copy_left {
+    text-align: left;
+  }
+
+  /* line 862, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+  .site-footer .footer_copy .copy_right {
+    text-align: right;
+  }
+}
+/* line 866, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.site-footer .footer_copy p {
+  margin-bottom: 0;
+}
+
+/* line 869, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.site-footer .footer_copy .ui.grid > .column {
+  margin-bottom: 0;
+}
+
+/* line 872, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.site-footer .ui.grid .copy_left, .site-footer .ui.grid .copy_right {
+  text-align: center;
+}
+
+@media screen and (min-width: 790px) {
+  /* line 876, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+  .site-footer .ui.grid .copy_left {
+    text-align: left;
+  }
+
+  /* line 879, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+  .site-footer .ui.grid .copy_right {
+    text-align: right;
+  }
+}
+/* line 883, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.site-footer a {
+  color: #FFF;
+}
+
+/* line 886, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.site-footer a:hover {
+  color: #dc3f28;
+}
+
+/* line 889, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.alignleft, .entry-thumbnail.thumbnail {
+  display: inline;
+  float: left;
+  margin-right: 30px;
+  margin-right: 3rem;
+}
+
+/* line 895, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 30px;
+  margin-left: 3rem;
+}
+
+/* line 901, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.aligncenter {
+  display: block;
+  clear: both;
+  margin: 0 auto;
+}
+
+/* line 906, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+img.wp-smiley {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  border: none;
+}
+
+/* line 912, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.gallery-caption {
+  font-family: inherit;
+}
+
+/* line 915, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.bypostauthor {
+  margin: 0;
+}
+
+/* line 918, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.gallery {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+
+/* line 922, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.gallery-item {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 0 4px 4px 0;
+  margin: 0 .4rem .4rem 0;
+}
+
+/* line 929, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.gallery-columns-1 .gallery-item {
+  max-width: 100%;
+}
+
+/* line 932, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.gallery-columns-2 .gallery-item {
+  max-width: 48%;
+  max-width: -webkit-calc(50% - 4px);
+  max-width: calc(50% - 4px);
+}
+
+/* line 937, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.gallery-columns-3 .gallery-item {
+  max-width: 32%;
+  max-width: -webkit-calc(33.3% - 4px);
+  max-width: calc(33.3% - 4px);
+}
+
+/* line 942, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.gallery-columns-4 .gallery-item {
+  max-width: 23%;
+  max-width: -webkit-calc(25% - 4px);
+  max-width: calc(25% - 4px);
+}
+
+/* line 947, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.gallery-columns-5 .gallery-item {
+  max-width: 19%;
+  max-width: -webkit-calc(20% - 4px);
+  max-width: calc(20% - 4px);
+}
+
+/* line 952, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.gallery-columns-6 .gallery-item {
+  max-width: 15%;
+  max-width: -webkit-calc(16.7% - 4px);
+  max-width: calc(16.7% - 4px);
+}
+
+/* line 957, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.gallery-columns-7 .gallery-item {
+  max-width: 13%;
+  max-width: -webkit-calc(14.28% - 4px);
+  max-width: calc(14.28% - 4px);
+}
+
+/* line 962, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.gallery-columns-8 .gallery-item {
+  max-width: 11%;
+  max-width: -webkit-calc(12.5% - 4px);
+  max-width: calc(12.5% - 4px);
+}
+
+/* line 967, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.gallery-columns-9 .gallery-item {
+  max-width: 9%;
+  max-width: -webkit-calc(11.1% - 4px);
+  max-width: calc(11.1% - 4px);
+}
+
+/* line 972, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.gallery-columns-1 .gallery-item:nth-of-type(1n), .gallery-columns-2 .gallery-item:nth-of-type(2n), .gallery-columns-3 .gallery-item:nth-of-type(3n), .gallery-columns-4 .gallery-item:nth-of-type(4n), .gallery-columns-5 .gallery-item:nth-of-type(5n), .gallery-columns-6 .gallery-item:nth-of-type(6n), .gallery-columns-7 .gallery-item:nth-of-type(7n), .gallery-columns-8 .gallery-item:nth-of-type(8n), .gallery-columns-9 .gallery-item:nth-of-type(9n) {
+  margin-right: 0;
+}
+
+/* line 975, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.gallery-columns-1.gallery-size-medium figure.gallery-item:nth-of-type(1n+1), .gallery-columns-1.gallery-size-thumbnail figure.gallery-item:nth-of-type(1n+1), .gallery-columns-2.gallery-size-thumbnail figure.gallery-item:nth-of-type(2n+1), .gallery-columns-3.gallery-size-thumbnail figure.gallery-item:nth-of-type(3n+1) {
+  clear: left;
+}
+
+/* line 978, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.gallery-caption {
+  font-size: 12px;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  max-height: 50%;
+  margin: 0;
+  padding: 6px 8px;
+  padding: .6rem .8rem;
+  text-align: left;
+  opacity: 0;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* line 999, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.gallery-caption:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 49px;
+  content: "";
+}
+
+/* line 1008, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.gallery-item:hover .gallery-caption {
+  opacity: 1;
+}
+
+/* line 1012, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.gallery-columns-7 .gallery-caption, .gallery-columns-8 .gallery-caption, .gallery-columns-9 .gallery-caption {
+  display: none;
+}
+
+/* line 1015, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.attachment {
+  margin-bottom: 20px;
+  margin-bottom: 2rem;
+}
+
+/* line 1019, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.page-title {
+  margin-bottom: 15px;
+  color: #dc3f28;
+}
+
+/* line 1023, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.events_page .event_widget .event_left .event_date {
+  font-size: 17px;
+  padding: 2px 0;
+}
+
+/* line 1027, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.events_page .event_widget .event_left .event_date:before {
+  top: 17px;
+  width: 33px;
+}
+
+/* line 1031, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.events_page .event_widget .event_item {
+  position: relative;
+  margin-bottom: 30px;
+  padding: 15px 20px 20px 20px;
+  background: #212121;
+}
+
+/* line 1037, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.events_page .event_widget .event_item.has_map {
+  padding: 20px;
+}
+
+/* line 1040, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.events_page .event_widget .event_item.has_map {
+  padding: 20px;
+}
+
+/* line 1043, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.events_page .event_widget .event_item.has_map .event_map {
+  margin-bottom: 15px;
+}
+
+/* line 1046, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.events_page .event_widget .event_detail .event_time, .events_page .event_widget .event_detail .event_location {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* line 1051, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.events_page .event_widget .event_detail .event_title {
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1100px) {
+  /* line 1055, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+  .events_page .event_widget .event_detail .event_time, .events_page .event_widget .event_detail .event_location {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+
+  /* line 1059, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+  .events_page .event_widget .event_detail .event_button {
+    float: right;
+    margin: 0;
+    margin-top: -12px;
+  }
+
+  /* line 1064, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+  .events_page .event_widget .event_detail .event_title {
+    margin: 7px 0 3px;
+  }
+}
+/* line 1068, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.event_single .event_item {
+  position: relative;
+  margin-bottom: 30px;
+  padding: 15px 20px 20px 20px;
+  background: #0f2527;
+}
+
+/* line 1074, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.event_single .event_item.has_map {
+  padding: 20px;
+}
+
+/* line 1077, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.event_single .event_item.has_map .event_map {
+  margin-bottom: 15px;
+}
+
+/* line 1080, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.event_single .event_time, .event_single .event_location {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* line 1085, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.event_single .event_button {
+  margin: 0;
+  margin-top: -12px;
+  margin-left: 5px;
+}
+
+/* line 1090, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.event_date, .event_month, .event_location {
+  color: #FFF;
+}
+
+/* line 1093, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.ui.button {
+  font-family: "Oswald", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  padding: .7em 1.2em;
+  letter-spacing: .7px;
+  text-transform: uppercase !important;
+  color: white;
+  border-radius: 0;
+  background: #dc3f28;
+  vertical-align: baseline;
+}
+
+/* line 1105, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.ui.button a {
+  color: white;
+}
+
+/* line 1108, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.ui.button:hover {
+  color: #FFF;
+  background: #4090b3;
+}
+
+/* line 1112, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.ui.button:focus {
+  color: #FFF;
+  box-shadow: none;
+}
+
+/* line 1116, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.ui.button.colored {
+  background: #dc3f28;
+}
+
+/* line 1119, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.ui.button.colored:hover {
+  background: #dc3f28;
+}
+
+/* line 1122, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.ui.huge.button {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px 30px;
+  letter-spacing: 1.2px;
+}
+
+/* line 1128, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.ui.show.button {
+  background: #dc3f28;
+}
+
+/* line 1131, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.ui.twitter.button {
+  background: #e69c23;
+}
+
+/* line 1134, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.ui.facebook.button {
+  background: #783648;
+}
+
+/* line 1137, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.ui.youtube.button {
+  background: #75c044;
+}
+
+/* line 1140, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.ui.twitter.button:hover, .ui.facebook.button:hover, .ui.youtube.button:hover {
+  background: #4090b3;
+}
+
+/* line 1143, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.widget_heading {
+  color: #4090b3;
+  font-size: 13px;
+}
+
+/* line 1148, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+form label {
+  font-size: 11px;
+  display: inline;
+  margin-right: 5px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* line 1156, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.form-row {
+  margin-bottom: 10px;
+}
+
+/* line 1159, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.ui.accordion .accordion .title, .ui.accordion .title {
+  padding: .8em 0;
+  color: #FFF;
+}
+
+/* line 1163, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.royalSlider {
+  width: 1038px;
+  height: 500px;
+  position: relative;
+  direction: ltr;
+}
+
+/* line 1169, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.logged-in-as {
+  color: #8f1a1c;
+}
+
+/* line 1173, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.item {
+  background: #333;
+  text-align: center;
+  height: 300px !important;
+}
+
+/* line 1178, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.carousel {
+  margin-top: 20px;
+}
+
+/* line 1181, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.bs-example {
+  margin: 20px;
+}
+
+/* line 1185, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.carousel-caption {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 50px;
+  display: inline-block;
+  margin-bottom: -200px;
+  padding: 5px 30px;
+  letter-spacing: 3px;
+}
+
+/* line 1194, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+a:hover, a:link {
+  text-decoration: none;
+}
+
+/* line 1197, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+input#event_avatar {
+  color: white;
+}
+
+/* line 1200, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.carousel-inner {
+  width: 1038px;
+  height: 500px;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
+/* line 1206, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+a.carousel-control.left {
+  margin-left: -20px;
+}
+
+/* line 1209, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+a.carousel-control.right {
+  margin-right: -20px;
+}
+
+/* line 1213, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+input[type=field] {
+  button: red;
+}
+
+/* line 1216, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.event_content {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  line-height: 1.8;
+  color: #464547;
+}
+
+/* line 1221, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.form-row {
+  width: 400px;
+}
+
+/* line 1224, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.box-green h1 {
+  background: #75c044;
+  padding: 15px 5px;
+  margin: -5px;
+  border-radius: 5px;
+}
+
+/* line 1230, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.box-blue h1 {
+  background: #4ebec6;
+  padding: 15px 5px;
+  margin: -5px;
+  border-radius: 5px;
+}
+
+/* line 1236, /Users/alexandrahanley/personal-project/personal-project-alexandra/app/assets/css/application.css.scss */
+.box-purple h1 {
+  background: #773347;
+  padding: 15px 5px;
+  margin: -5px;
+  border-radius: 5px;
+}
