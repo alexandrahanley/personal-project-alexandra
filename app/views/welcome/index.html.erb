@@ -57,7 +57,7 @@
                 <div class="item">
                   <%= image_tag("Christel.png") %>
                   <div class="carousel-caption">
-                    <div class="box-blue"><h1>Try building your own fun!</h1></div><br>
+                    <div class="box-blue"><h1>Build something together!</h1></div><br>
                   </div>
                 </div>
               </div>
@@ -100,7 +100,7 @@
                     <span class="posted-on"><strong><%= event.date.strftime('%A, %B %d, %Y') %></strong></span>
                     <span class="comments-link">
                       <span class="sep">/</span>
-                      <a href="#"><strong><%= event.start_time.strftime('%H:%M%p') %></strong></a>
+                      <a href="#"><strong><%= link_to event.start_time.strftime('%H:%M%p'), event_path(event) %></strong></a>
                     </span>
                   </div>
                   <div class="event_content">

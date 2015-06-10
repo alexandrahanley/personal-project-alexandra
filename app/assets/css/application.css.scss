@@ -1020,7 +1020,7 @@ img.wp-smiley {
     margin-bottom: 2rem;
 }
 .page-title {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     color: #dc3f28;
 }
 .events_page .event_widget .event_left .event_date {
@@ -1036,6 +1036,9 @@ img.wp-smiley {
     margin-bottom: 30px;
     padding: 15px 20px 20px 20px;
     background: #212121;
+}
+.events_page .event_widget .event_item.has_map {
+    padding: 20px;
 }
 .events_page .event_widget .event_item.has_map {
     padding: 20px;
@@ -1069,7 +1072,7 @@ img.wp-smiley {
     position: relative;
     margin-bottom: 30px;
     padding: 15px 20px 20px 20px;
-    background: rgba(0, 0, 0, .8);
+    background: #0f2527;
 }
 .event_single .event_item.has_map {
     padding: 20px;
@@ -1094,13 +1097,13 @@ img.wp-smiley {
     font-family: "Oswald", Helvetica, Arial, sans-serif;
     font-size: 12px;
     font-weight: normal;
-    margin-bottom: 20px;
     padding: .7em 1.2em;
     letter-spacing: .7px;
     text-transform: uppercase !important;
     color: white;
     border-radius: 0;
     background: #dc3f28;
+    vertical-align: baseline;
 }
 .ui.button a{
   color: white;
@@ -1124,6 +1127,9 @@ img.wp-smiley {
     font-weight: bold;
     padding: 15px 30px;
     letter-spacing: 1.2px;
+}
+.ui.show.button {
+    background: #dc3f28;
 }
 .ui.twitter.button {
     background: #e69c23;
