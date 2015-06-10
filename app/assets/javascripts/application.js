@@ -16,8 +16,7 @@
 //= require_tree .
 
 $(document).ready(function(){
-     $("#myCarousel").carousel({
-         interval: 9000,
-         pause: true
-     });
+  $('.carousel').carousel({
+    interval: 3500 
+  });
 });
